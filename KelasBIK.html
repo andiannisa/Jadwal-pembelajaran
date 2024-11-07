@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education - List of Meetings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+   
+
+  <!-- Sub Header -->
+  
+  <!-- ***** Header Area Start ***** -->
+
+  <style>
+    /* Styling untuk header area */
+    .header-area {
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(40, 167, 69, 0.8); /* Transparansi lebih sedikit untuk tampilan lebih solid */
+        padding: 15px 30px; 
+        position:fixed ; /* Sticky header */
+        top: 0; /* Menempel di atas */
+        z-index: 1000; /* Agar tetap di atas elemen lain */
+        transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna */
+    }
+
+    .header-area:hover {
+        background-color: rgba(40, 167, 69, 1); /* Ganti warna saat hover */
+        
+    }
+
+    .logo img {
+        width: 200px; /* Ukuran logo */
+        transition: transform 0.3s ease; /* Efek transisi pada logo */
+    }
+
+    .logo img:hover {
+        transform: scale(1.05); /* Efek zoom pada logo saat hover */
+    }
+
+    .nav {
+        list-style: none; /* Menghapus bullet points */
+        padding: 0;
+        display: flex; /* Menggunakan flexbox untuk menu */
+        justify-content: center; /* Pusatkan menu */
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0 20px; /* Jarak antar item menu */
+    }
+
+    .nav a {
+        text-decoration: none; /* Menghapus garis bawah pada tautan */
+        color: white; /* Warna teks putih */
+        font-weight: 600; /* Bobot font lebih tebal */
+        transition: color 0.3s ease; /* Efek transisi pada warna teks */
+    }
+
+    .nav a:hover {
+        color: #ffd700; /* Warna saat hover */
+    }
+
+    .nav .has-sub {
+        position: none; /* Untuk menempatkan sub-menu */ 
+    
+    }
+
+    .sub-menu {
+        display: none; /* Menyembunyikan sub-menu secara default */
+        position: absolute; /* Mengatur posisi sub-menu */
+        top: 100%; /* Menempatkan sub-menu di bawah menu utama */
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang sub-menu */
+        border-radius: 5px; /* Sudut melengkung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+        z-index: 999; /* Agar sub-menu di atas elemen lain */
+    }
+
+    .nav .has-sub:hover .sub-menu {
+        display: block; /* Tampilkan sub-menu saat hover */
+    }
+    
+
+    .menu-trigger {
+        display: none; /* Menyembunyikan menu trigger untuk tampilan desktop */
+        cursor: pointer; /* Pointer saat hover */
+        color: white; /* Warna teks putih */
+        font-weight: 600; /* Bobot font lebih tebal */
+    }
+
+    /* Media Queries untuk responsivitas */
+    @media (max-width: 768px) {
+        .nav {
+            flex-direction: column; /* Menyusun menu secara vertikal pada perangkat kecil */
+            display: none; /* Sembunyikan menu secara default */
+        }
+        .menu-trigger {
+            display: block; /* Tampilkan menu trigger pada perangkat kecil */
+        }
+        .nav.show {
+            display: flex; /* Tampilkan menu saat menu trigger diklik */
+        }
+    }
+</style>
+</head>
+<body>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="https://www.sekolahathirah.sch.id/assets/public/images/logo.png??l9ffnidpgwfack94" alt="Logo Sekolah">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#meetings" class="active">Schedules</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Class</a>
+                            <ul class="sub-menu">
+                                <li><a href="kelasBKS.html">BKS</a></li>
+                              <li><a href="KelasBIK.html">BIK</a></li>
+                              <li><a href="KelasBAK.html">BAK</a></li>
+                              <li><a href="KelasFIM.html">FIM</a></li>
+                              <li><a href="KelasEES.html">EES</a></li>
+                              <li><a href="KelasBSS.html">BSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="menu-trigger" onclick="toggleMenu()">
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
+
+  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+  <!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Silahkan Cek Jadwal Pembelajaran Anda</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="meetings-page" id="meetings">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+            <div class="col-lg-12">
+                <div class="row grid">
+                    <!-- Sample Meeting Item -->
+                    <div class="col-lg-4 templatemo-item-col all XI">
+                        <div class="meeting-item">
+                            <div class="thumb">
+                                <a href="BIK11.html">
+                                    <img src="assets/images/kelas 11.2.jpg" alt="Kelas 10.1">
+                                </a>
+                            </div>
+                            <div class="down-content">
+                                <div class="date">
+                                    <h6>KELAS 11 </h6>
+                                </div>
+                                <a href="BIK11.html">
+                                    <h4>BIK</h4>
+                                </a>
+                                <p> Detail Jadwal Kelas </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 templatemo-item-col all XII">
+                      <div class="meeting-item">
+                        <div class="thumb">
+                            <a href="BIK12.html">
+                            <img src="assets/images/kelas 12.3.jpeg" alt="Kelas 10.2">
+                            </a>
+                        </div>
+                        <div class="down-content">
+                            <div class="date">
+                                <h6>KELAS 12 </h6>
+                            </div>
+                            <a href="BIK12.html">
+                              <h4>BIK</h4>
+                            </a>
+                          <p>Detail Jadwal Kelas</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+      
+    </div>
+</div>
+  </section>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education Template - Meeting Detail Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+      .row {
+    --bs-gutter-x: 1.0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+    </style>
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+   
+
+  
+  <!-- ***** Header Area Start ***** -->
+  <style>
+    /* Styling untuk header area */
+    .header-area {
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(40, 167, 69, 0.8); /* Transparansi lebih sedikit untuk tampilan lebih solid */
+        padding: 15px 5px; 
+        position:fixed ; /* Sticky header */
+        top: 0; /* Menempel di atas */
+        z-index: 1000; /* Agar tetap di atas elemen lain */
+        transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna */
+    }
+
+    .header-area:hover {
+        background-color: rgba(40, 167, 69, 1); /* Ganti warna saat hover */
+        
+    }
+
+    .logo img {
+        width: 200px; /* Ukuran logo */
+        transition: transform 0.3s ease; /* Efek transisi pada logo */
+    }
+
+    .logo img:hover {
+        transform: scale(1.05); /* Efek zoom pada logo saat hover */
+    }
+
+    .nav {
+        list-style: none; /* Menghapus bullet points */
+        padding: 0;
+        display: flex; /* Menggunakan flexbox untuk menu */
+        justify-content: center; /* Pusatkan menu */
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0 20px; /* Jarak antar item menu */
+    }
+
+    .nav a {
+        text-decoration: none; /* Menghapus garis bawah pada tautan */
+        color: white; /* Warna teks putih */
+        font-weight: 600; /* Bobot font lebih tebal */
+        transition: color 0.3s ease; /* Efek transisi pada warna teks */
+    }
+
+    .nav a:hover {
+        color: #ffd700; /* Warna saat hover */
+    }
+
+    .nav .has-sub {
+        position: none; /* Untuk menempatkan sub-menu */ 
+    
+    }
+
+    .sub-menu {
+        display: none; /* Menyembunyikan sub-menu secara default */
+        position: absolute; /* Mengatur posisi sub-menu */
+        top: 100%; /* Menempatkan sub-menu di bawah menu utama */
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang sub-menu */
+        border-radius: 5px; /* Sudut melengkung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+        z-index: 999; /* Agar sub-menu di atas elemen lain */
+    }
+
+    .nav .has-sub:hover .sub-menu {
+        display: block; /* Tampilkan sub-menu saat hover */
+    }
+    
+
+    .menu-trigger {
+        display: none; /* Menyembunyikan menu trigger untuk tampilan desktop */
+        cursor: pointer; /* Pointer saat hover */
+        color: white; /* Warna teks putih */
+        font-weight: 600; /* Bobot font lebih tebal */
+    }
+
+    /* Media Queries untuk responsivitas */
+    @media (max-width: 768px) {
+        .nav {
+            flex-direction: column; /* Menyusun menu secara vertikal pada perangkat kecil */
+            display: none; /* Sembunyikan menu secara default */
+        }
+        .menu-trigger {
+            display: block; /* Tampilkan menu trigger pada perangkat kecil */
+        }
+        .nav.show {
+            display: flex; /* Tampilkan menu saat menu trigger diklik */
+        }
+    }
+</style>
+</head>
+<body>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="https://www.sekolahathirah.sch.id/assets/public/images/logo.png??l9ffnidpgwfack94" alt="Logo Sekolah">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#meetings" class="active">Schedules</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Class</a>
+                            <ul class="sub-menu">
+                                <li><a href="kelasBKS.html">BKS</a></li>
+                              <li><a href="KelasBIK.html">BIK</a></li>
+                              <li><a href="KelasBAK.html">BAK</a></li>
+                              <li><a href="KelasFIM.html">FIM</a></li>
+                              <li><a href="KelasEES.html">EES</a></li>
+                              <li><a href="KelasBSS.html">BSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="menu-trigger" onclick="toggleMenu()">
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
+
+  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+  <!-- ***** Header Area End ***** -->
+    
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Lihat jadwal lengkapnya</h6>
+         <h2>Jadwal Pembelajaran Kelas 11 BSS</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--hari senin-->
+<section class="meetings-pagedetail" id="meetings">
+    <div class="container small-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="meeting-single-item shadow-sm">
+            <div class="thumb mb-3">
+                <img src="assets/images/Senin.jpg" alt="" class="img-fluid rounded" style="width: 250px; height: auto; display: block; margin: auto;">
+            </div>
+            <div class="down-content text-center">
+              <h4 class="mb-4">Bimbingan Wali Kelas (07.30-07.40)</h4>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="Mapel">
+                    <h5>Mata Pelajaran</h5>
+                    <p>
+                      <span style="color: #578a39;">Sosiologi</span><br>
+                      <span style="color: #777d18;">BHS Inggris Lanjut</span><br>
+                      <span style="color: #000000;">Istirahat</span><br>
+                      <span style="color: #0091ff;">Sejarah Tingkat Lanjut</span><br>
+                      <span style="color: #000000;">Sholat Dzuhur</span><br>
+                      <span style="color: #777d18;">BHS Inggris Lanjut</span><br>
+                      <span style="color: #bbb019;">Mapel Pilihan</span><br>
+                      <span style="color: #000000;">Sholat Ashar</span>
+                  </p><br>                
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="time">
+                    <h5>Waktu</h5>
+                    <p>
+                      <span style="color: #578a39;">07.40-09.40 (2 jam )</span><br>
+                      <span style="color: #777d18;">09.40-10.20 (40 menit)</span><br>
+                      <span style="color: #000000;">10.20-10.45 (25 menit)</span><br>
+                      <span style="color: #0091ff;">10.45-12.00 (1 jam 15 menit)</span><br>
+                      <span style="color: #000000;">12.00-13.00 (1 jam)</span><br>
+                      <span style="color: #777d18;">13.10-14.30 (1 jam 20 menit)</span><br>
+                      <span style="color: #bbb019;">14.30-15.40 (1 jam 10 menit)</span><br>
+                      <span style="color: #000000;">15.40-16.00 (20 menit)</span>
+                  </p><br>                
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="guru">
+                    <h5>Guru</h5>
+                    <p>
+                      <span style="color: #578a39;">Aries Sahriwin, S.Pd</span><br>
+                      <span style="color: #777d18;">Zulfikar Wibisono, S.Pd</span><br><br>
+                      <span style="color: #0091ff;">Masruroh, S.Pd, Gr</span><br><br>
+                      <span style="color: #777d18;">Zulfikar Wibisono, S.Pd</span><br>
+                  </p>                
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4 class="mt-4">Penyampaian WALAS (16.00-16.10)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--hari rabu-->
+<section class="meetings-pagedetail" id="meetings">
+    <div class="container small-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="meeting-single-item shadow-sm">
+            <div class="thumb mb-3">
+                <img src="assets/images/Rabu.jpg" alt="" class="img-fluid rounded" style="width: 250px; height: auto; display: block; margin: auto;">
+            </div>
+            <div class="down-content text-center">
+              <h4 class="mb-4">Bimbingan Wali Kelas (07.30-07.40)</h4>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="Mapel">
+                    <h5>Mata Pelajaran</h5>
+                    <p>
+                      <span style="color: #bbb019;">Mapel Pilihan</span><br>
+                      <span style="color: #578a39;">Sosiologi</span><br>
+                      <span style="color: #000000;">Istirahat</span><br>
+                      <span style="color: #578a39;">Sosiologi</span><br>
+                      <span style="color: #0091ff;">Sejarah Tingkat Lanjut</span><br>
+                      <span style="color: #000000;">Sholat Dzuhur</span><br>
+                      <span style="color: #0091ff;">Sejarah Tingkat Lanjut</span><br>
+                      <span style="color: #777d18;">BHS Inggris Lanjut</span><br>
+                      <span style="color: #000000;">Sholat Ashar</span>
+                  </p><br>                
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="time">
+                    <h5>Waktu</h5>
+                    <p>
+                      <span style="color: #bbb019;">07.40-09.40 (2 jam )</span><br>
+                      <span style="color: #578a39;">09.40-10.20 (40 menit)</span><br>
+                      <span style="color: #000000;">10.20-10.40 (20 menit)</span><br>
+                      <span style="color: #578a39;">10.40-11.20 (40 menit)</span><br>
+                      <span style="color: #0091ff;">11.20-12.00 (40 menit)</span><br>
+                      <span style="color: #000000;">12.00-13.00 (1 jam)</span><br>
+                      <span style="color: #0091ff;">13.10-14.30 (1 jam 20 menit)</span><br>
+                      <span style="color: #777d18;">14.30-15.40 (1 jam 10 menit)</span><br>
+                      <span style="color: #000000;">15.40-16.00 (20 menit)</span>
+                  </p><br>                
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="guru">
+                    <h5>Guru</h5>
+                    <p>
+                      <br><span style="color: #578a39;">Aries Sahriwin, S.Pd</span><br><br>
+                      <span style="color: #578a39;">Aries Sahriwin, S.Pd</span><br>
+                      <span style="color: #0091ff;">Masruroh, S.Pd, Gr</span><br><br>
+                      <span style="color: #0091ff;">Masruroh, S.Pd, Gr</span><br>
+                      <span style="color: #777d18;">Zulfikar Wibisono, S.Pd</span>
+                  </p>                
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h4 class="mt-4">Penyampaian WALAS (16.00-16.10)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
