@@ -44,6 +44,16 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+
+media (max-width: 767px) {
+    .header-area .main-nav .logo {
+        color: #1e1e1e;
+    }
+	.logo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+}
 .clearfix:after {
   content: ".";
   display: block;
