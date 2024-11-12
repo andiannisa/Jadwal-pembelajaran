@@ -881,19 +881,17 @@ upcoming meetings
 }
 
 .main-button-red a {
-  display: inline-block;
-  background-color: #f5a425;
-  color: #fff;
-  padding: 14px 36px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  
-
+    display: inline-block;
+    background-color: #f5a425;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .main-button-red a:hover {
