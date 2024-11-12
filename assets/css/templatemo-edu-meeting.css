@@ -886,7 +886,11 @@ upcoming meetings
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
   transform: translateY(-3px);
 }
-
+ @media (max-width: 768px) {
+      .bg-image {
+          height: 50vh; /* Atur tinggi gambar agar tidak terlalu besar di layar kecil */
+      }
+  }
 @media (max-width: 768px) {
   .upcoming-meetings {
       padding: 60px 20px;
