@@ -744,11 +744,6 @@ banner
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi untuk hover */
 }
 
-.main-banner .caption .main-button-red:hover {
-  background-color: #e59414; /* Warna latar belakang saat hover */
-  transform: translateY(-3px); /* Efek lift saat hover */
-}
-
 /* Media Queries untuk responsivitas */
 @media screen and (max-width: 767px) {
   .main-banner .caption h6 {
